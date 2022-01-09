@@ -4,7 +4,9 @@ project(JDogsWebServer)
 
 add_executable(JDogsWebServer ./src/main.cpp)
 
-set( Libs
-    ws2_
+set(Libraries
+    "ws2_32"
 
 )
+
+target_link_libraries(JDogsWebServer ${Libraries})
